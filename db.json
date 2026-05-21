@@ -1,14 +1,66 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "areadacomputacao": [
+    {
+      "idarea": 1,
+      "descricao": "Sistemas Operacionais"
+    },
+    {
+      "idarea": 2,
+      "descricao": "Programação"
+    },
+    {
+      "idarea": 3,
+      "descricao": "Algoritmos e Teoria"
+    },
+    {
+      "idarea": 4,
+      "descricao": "Redes de Computadores"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+  "figuras": [
+    {
+      "idfiguras": 1,
+      "nome": "Linus Torvalds",
+      "feito": "Criador e por muito tempo o desenvolvedor mais importante do núcleo Linux, sendo utilizado em importantes sistemas Linux, Android e Chrome OS.",
+      "dadosgerais": "Nasceu em 28 de dezembro de 1969",
+      "fk_idarea": 1
+    },
+    {
+      "idfiguras": 2,
+      "nome": "Ada Lovelace",
+      "feito": "Escreveu o primeiro algoritmo para ser processado por uma máquina (a máquina analítica de Babbage), sendo considerada a primeira programadora da história.",
+      "dadosgerais": "Nasceu em 10 de dezembro de 1815",
+      "fk_idarea": 3
+    },
+    {
+      "idfiguras": 3,
+      "nome": "Alan Turing",
+      "feito": "Pai da ciência da computação e da inteligência artificial. Formalizou os conceitos de algoritmo e computação com a Máquina de Turing.",
+      "dadosgerais": "Nasceu em 23 de junho de 1912",
+      "fk_idarea": 3
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "fatos": [
+    {
+      "idfatos": 1,
+      "data": "Anos 2000",
+      "titulo": "Criação do JSON",
+      "descricao": "O JSON (JavaScript Object Notation) foi criado pelo programador estadunidense Douglas Crockford no início dos anos 2000, com a primeira mensagem JSON sendo enviada em 2001.",
+      "fk_idarea": 2
+    },
+    {
+      "idfatos": 2,
+      "data": "1969",
+      "titulo": "Criação da ARPANET",
+      "descricao": "O primeiro link de rede de computadores foi estabelecido entre a UCLA e a Universidade de Stanford, dando origem à base da Internet atual.",
+      "fk_idarea": 4
+    },
+    {
+      "idfatos": 3,
+      "data": "Ano 2000",
+      "titulo": "O Bug do Milênio (Y2K)",
+      "descricao": "Medo global de que sistemas antigos de computador falhassem na transição do ano 1999 para 2000 devido à representação do ano com apenas dois dígitos.",
+      "fk_idarea": 2
+    }
+  ]
 }
